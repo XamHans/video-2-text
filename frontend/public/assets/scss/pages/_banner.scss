@@ -1,0 +1,558 @@
+@use "../abstract" as *;
+
+/*----------------------------------------
+    03. banner CSS
+----------------------------------------*/
+
+.banner-area, .explore-area {
+	display: block;
+
+	@media #{$sm, $xs} {
+		display: none;
+	}
+}
+
+.banner-900 {
+	min-height: 900px;
+	position: relative;
+}
+
+.banner-670 {
+	min-height: 670px;
+	position: relative;
+}
+
+.banner-460 {
+	min-height: 460px;
+	position: relative;
+}
+
+.banner-bg,
+.banner-bg-light {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	z-index: -1;
+}
+
+.b1-shape1 {
+	position: absolute;
+	left: 2.5%;
+	top: 29%;
+	filter: blur(2px);
+}
+
+[data-theme='dark'] {
+	.banner-bg-light {
+		display: none;
+	}
+}
+
+.active-light-mode {
+	.banner-bg {
+		display: none;
+	}
+}
+
+.single-banner-1 {
+	padding-top: 130px;
+}
+
+// search-form style start
+.search-form {
+	position: relative;
+	width: 100%;
+	max-width: 610px;
+
+	&::before {
+		position: absolute;
+		content: "\f002";
+		top: 50%;
+		transform: translateY(-50%);
+		color: #b1b1b1;
+		font-family: "Font Awesome 5 Pro";
+		font-weight: 300;
+		left: 19px;
+	}
+
+	input {
+		width: 100%;
+		height: 70px;
+		line-height: 60px;
+		padding: 0 135px 0 45px;
+		color: var(--clr-common-heading);
+		border-radius: 5px;
+		background: var(--clr-common-white);
+		border: none;
+
+		&::placeholder {
+			font-size: 14px;
+			color: #b1b1b1;
+		}
+
+		&::focus {
+			border: 0;
+		}
+	}
+
+	button {
+		font-size: 16px;
+		font-weight: 700;
+		text-transform: inherit;
+		line-height: 50px;
+		text-align: center;
+		height: 50px;
+		background: var(--clr-theme-1);
+		color: var(--clr-common-white);
+		border: none;
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		bottom: 0;
+		border-radius: 5px;
+		overflow: hidden;
+		padding: 0 30px;
+
+		i {
+			color: var(--clr-common-white);
+			margin-left: 10px;
+		}
+	}
+}
+
+
+
+.banner-content {
+	h1 {
+		font-size: 65px;
+		line-height: 1.2;
+
+		@media #{$lg} {
+			font-size: 60px;
+		}
+
+		@media #{$md} {
+			font-size: 44px;
+		}
+
+		@media #{$sm} {
+			font-size: 44px;
+		}
+
+		@media #{$xs} {
+			font-size: 34px;
+		}
+
+		span {
+			font-weight: 800;
+			color: var(--clr-theme-1);
+		}
+	}
+
+	p {
+		font-size: 20px;
+
+		span {
+			font-weight: 800;
+			color: var(--clr-theme-1);
+		}
+	}
+}
+
+.banner-btn {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
+.oc-banner-video {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+
+	a {
+		height: 50px;
+		width: 50px;
+		line-height: 48px;
+		text-align: center;
+		border: 1px solid var(--clr-common-body-text);
+		display: inline-block;
+		color: var(--clr-common-heading);
+		font-size: 14px;
+		border-radius: 50%;
+	}
+
+	span {
+		font-size: 16px;
+		font-weight: 500;
+		font-family: $urbanist;
+		display: inline-block;
+		color: var(--clr-common-heading);
+	}
+}
+
+.oc-banner-counter {
+	display: flex;
+	gap: 70px;
+
+	@media #{$xs} {
+		gap: 50px;
+	}
+
+	.art-meta-notice {
+		font-size: 36px;
+		font-weight: 700;
+		margin-bottom: 15px;
+
+		@media #{$xs} {
+			font-size: 30px;
+		}
+	}
+
+	.art-meta-type {
+		font-size: 16px;
+		font-weight: 500;
+		text-transform: inherit;
+		margin-bottom: 0;
+	}
+}
+
+.banner-content1 {
+	max-width: 610px;
+	position: relative;
+	z-index: 5;
+
+	@media #{$lg} {
+		max-width: 530px;
+	}
+
+	@media #{$md} {
+		margin-bottom: 60px;
+	}
+
+	@media #{$sm} {
+		max-width: 430px;
+		padding-top: 0;
+		padding-bottom: 50px;
+	}
+
+	@media #{$xs} {
+		padding-top: 0;
+		padding-bottom: 90px;
+	}
+}
+
+.oc-banner-img {
+	height: 650px;
+
+	@media #{$md,$sm} {
+		max-width: 520px;
+	}
+
+	@media #{$xs} {
+		max-width: 350px;
+		margin: 0 auto;
+		height: 440px;
+	}
+
+	.oc-banner-img-1 {
+		border-radius: 13px;
+		top: 0px;
+		right: 91px;
+		z-index: 1;
+		min-width: 250px;
+		@media #{$xs, $sm} {
+			img {
+				height: 250px;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+
+		
+	}
+
+	.oc-banner-img-2 {
+		position: absolute;
+		border-radius: 13px;
+		top: 160px;
+		left: 0px;
+
+		@media #{$xs} {
+			top: 80px;
+
+			img {
+				height: 120px;
+			}
+		}
+
+		img {
+			border-radius: 13px;
+		}
+	}
+
+	.oc-banner-img-3 {
+		position: absolute;
+		border-radius: 13px;
+		top: 80px;
+		right: -200px;
+
+		@media #{$xs} {
+			right: 0px;
+
+			img {
+				height: 200px;
+			}
+		}
+
+		img {
+			border-radius: 13px;
+		}
+	}
+
+	.oc-banner-img-4 {
+		position: absolute;
+		border-radius: 13px;
+		bottom: 91px;
+		left: 61px;
+
+		@media #{$xs} {
+			left: 10px;
+
+			img {
+				height: 180px;
+			}
+		}
+
+		img {
+			border-radius: 13px;
+		}
+	}
+
+	
+	.oc-banner-img-5 {
+		position: absolute;
+		border-radius: 13px;
+		top: 390px;
+		left: 393px;
+
+		@media #{$xs} {
+			left: 10px;
+
+			img {
+				height: 180px;
+			}
+		}
+
+		img {
+			border-radius: 13px;
+		}
+	}
+
+	.oc-banner-img-6 {
+		position: absolute;
+		border-radius: 13px;
+		top: 560px;
+		left: 553px;
+
+		@media #{$xs} {
+			left: 10px;
+
+			img {
+				height: 180px;
+			}
+		}
+
+		img {
+			border-radius: 13px;
+		}
+	}
+
+	.oc-banner-client-wrapper {
+		position: absolute;
+		left: -30px;
+		bottom: 0px;
+
+		z-index: 2;
+
+		@media #{$xs} {
+			left: -0px;
+		}
+	}
+
+	.oc-banner-client {
+		padding: 30px;
+		border-radius: 10px;
+
+		max-width: 300px;
+		height: 185px;
+		background: transparent;
+		border: 1px solid rgba(162, 175, 200, 0.31);
+		/* Note: currently only Safari supports backdrop-filter */
+		backdrop-filter: blur(12px);
+		--webkit-backdrop-filter: blur(12px);
+		background-color: rgba(255, 255, 255, 0.05);
+		/* (plus shape's fill blended on top as a separate layer with 10% opacity) */
+
+		img {
+			position: static;
+			height: 100%;
+			width: 100%;
+		}
+
+		a {
+			height: 40px;
+			width: 40px;
+			border: 2px solid var(--clr-common-white);
+			border-radius: 50%;
+			object-fit: cover;
+			display: inline-block;
+			overflow: hidden;
+
+			&:not(:first-child) {
+				margin-left: -15px;
+			}
+		}
+
+		.q-meta-viewed-members {
+			display: inline-flex;
+		}
+
+		.q-meta-views {
+			font-size: 14px;
+			color: var(--clr-common-heading);
+			display: block;
+		}
+
+		.q-meta-type {
+			font-size: 16px;
+			color: var(--clr-common-heading);
+			font-weight: 700;
+		}
+
+		.q-meta-item {
+			gap: 10px;
+			margin-bottom: 13px;
+		}
+
+		p {
+			font-size: 14px;
+			line-height: 24px;
+			color: var(--clr-common-heading);
+		}
+	}
+}
+
+@-moz-document url-prefix() {
+	[data-theme='dark'] .oc-banner-client {
+		background: #3841547a;
+	}
+
+	.active-light-mode .oc-banner-client {
+		background: #e7ebf47a;
+		border: 1px solid rgba(147, 161, 188, 0.14);
+	}
+}
+
+@keyframes circle {
+	from {
+		-webkit-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
+	}
+
+	to {
+		-webkit-transform: rotateZ(360deg);
+		transform: rotateZ(360deg);
+	}
+}
+
+.banner-content2 {
+	text-align: center;
+
+	.banner-btn {
+		display: inherit;
+	}
+
+	&.banner-content p {
+		max-width: 630px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.banner2-container {
+	overflow-x: clip;
+	overflow-y: visible;
+}
+
+// banner3 style
+.single-banner-3 {
+	border-radius: 10px;
+	overflow: hidden;
+
+	.banner-bg,
+	.banner-bg-light {
+		img {
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.banner-content3 h1 {
+	font-size: 40px;
+	font-weight: 700;
+	max-width: 400px;
+	line-height: 1.25;
+	color: var(--clr-common-white);
+
+	@media #{$xs} {
+		font-size: 34px;
+	}
+}
+
+.banner-content3 p {
+	font-size: 18px;
+	font-weight: 500;
+	color: var(--clr-common-white);
+	max-width: 350px;
+}
+
+.banner-content3 {
+	padding: 0 40px;
+
+	@media #{$xs} {
+		padding: 0 25px;
+	}
+}
+
+.banner-3-column {
+	@media (min-width: 1600px) and (max-width: 1800px) {
+		width: 60%;
+	}
+
+	@media (min-width: 1400px) and (max-width: 1599px) {
+		width: 100%;
+	}
+}
+
+.sidebar-art-list-column {
+	@media (min-width: 1600px) and (max-width: 1800px) {
+		width: 40%;
+	}
+
+	@media (min-width: 1400px) and (max-width: 1599px) {
+		width: 100%;
+	}
+}
+
+
+.react-responsive-modal-modal {
+	overflow: hidden;
+}

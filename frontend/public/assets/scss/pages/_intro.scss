@@ -1,0 +1,99 @@
+@use "../abstract"as *;
+
+/*----------------------------------------
+    10. process CSS
+----------------------------------------*/
+// work-process style
+.work-processes {
+	.row>div {
+		counter-increment: process-num;
+
+		.step {
+			font-size: 15px;
+			position: absolute;
+			right: 40px;
+			top: 30px;
+			z-index: 2;
+
+			&:before {
+				position: absolute;
+				content: counter(process-num, decimal-leading-zero);
+				font-size: 60px;
+				color: #eef1f6;
+				font-weight: 900;
+				z-index: -1;
+				right: 50%;
+				transform: translateX(50%);
+			}
+		}
+	}
+}
+
+.work-process-single {
+	background: var(--clr-bg-white);
+	border-radius: 10px;
+	padding: 55px 40px 45px;
+	min-height: calc(100% - 30px);
+
+	@media #{$lg,$xs} {
+		padding: 45px 30px 35px;
+	}
+
+	&:hover .process-icon img {
+		transform: scale(1.05);
+	}
+}
+
+.work-process-content {
+	text-align: center;
+}
+
+.work-process-content p {
+	margin-bottom: 0;
+}
+
+.process-icon {
+	height: 168px;
+	color: var(--clr-theme-1);
+
+	@media #{$lg,$xs} {
+		height: 138px;
+	}
+
+	img {
+		height: 100%;
+		transition: 0.6s;
+	}
+}
+
+.process-title {
+	font-size: 24px;
+	margin-bottom: 22px;
+
+	a:hover {
+		color: var(--clr-theme-1);
+	}
+}
+
+.text-btn {
+	font-size: 14px;
+	font-weight: 700;
+	color: var(--clr-theme-1);
+	line-height: 20px;
+	display: inline-flex;
+	align-items: center;
+
+	i {
+		padding-left: 6px;
+	}
+
+	&:hover {
+		i {
+			padding-left: 10px;
+		}
+	}
+}
+
+.process-btn {
+	margin-top: 5px;
+}
