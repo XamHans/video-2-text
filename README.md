@@ -4,7 +4,6 @@ Video2Text (https://video2text.de) allows you to easily convert your video to te
 Currently it only supports Youtube Videos.
 
 
-
 ### Converting video to text (non-technical users)
 
 Download and execute the converter(https://filebin.net/9c29bufd20z3sw70/converter.exe).
@@ -26,9 +25,6 @@ Visit https://video2text.de and follow the instructions there.
 If you need any help, contact me at contact@jhayer.tech
 
 ## Author
-
-Contributors names and contact info
-
 Johannes Mueller 
 https://jhayer.tech
 
