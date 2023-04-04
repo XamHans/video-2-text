@@ -9,8 +9,6 @@ app = FastAPI()
 origins = [
     "https://video2text.de",
     "http://localhost:3000",
-    "http://localhost:3001",
-
 ]
 
 app.add_middleware(
@@ -33,5 +31,5 @@ async def transcribe(payload: dict = Body(...), req: Request = Request):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=3000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
