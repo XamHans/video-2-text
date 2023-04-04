@@ -20,9 +20,9 @@ const Footer = () => {
                           OpenAI Whisper is a cutting-edge technology that
                           utilizes state-of-the-art algorithms to provide
                           accurate video-to-text conversion. By downloading and
-                          executing our converter, you will be able to access
+                          executing the converter, you will be able to access
                           this technology for free and use it to convert your
-                          videos into text. We believe that our service can
+                          videos into text. I believe that this service can
                           provide value to a wide range of users, including
                           researchers, educators, journalists, and content
                           creators. If you have any questions or concerns about
