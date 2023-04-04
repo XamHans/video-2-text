@@ -20,7 +20,7 @@ const IntroSection = () => {
       WorkProcessImage: "/assets/img/step-2.svg",
       WorkProcessTitle: "Start the converter",
       WorkProcessDesc:
-        "Double click on the downloaded file. This will start the converter. The converter is now ready and is waiting for you to paste the link to the Youtube video. ",
+        "Double click on the downloaded file. This will start the converter. The converter is now ready and is waiting for you to   the link to the Youtube video. ",
       WorkProcessLink: "/",
     },
     {

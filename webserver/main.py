@@ -1,6 +1,6 @@
 from fastapi import FastAPI, Body, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
-from utils import is_youtube_url
+import uvicorn
 
 from businessLogic import transcribeVideoOrchestrator
 
@@ -24,10 +24,26 @@ app.add_middleware(
 
 @app.post("/transcribe")
 async def transcribe(payload: dict = Body(...), req: Request = Request):
-    print(payload)
     url = payload['url']
     language = payload['language']
 
     transcript = transcribeVideoOrchestrator(url, language)
 
     return {"data":  transcript, "error": None}
+
+
+def start_server(host="127.0.0.1",
+                 port=3000,
+                 num_workers=4,
+                 loop="asyncio",
+                 reload=False):
+    uvicorn.run("web_server:app",
+                host=host,
+                port=port,
+                workers=num_workers,
+                loop=loop,
+                reload=reload)
+
+
+if __name__ == "__main__":
+    start_server()
