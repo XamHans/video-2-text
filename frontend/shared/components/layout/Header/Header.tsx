@@ -48,7 +48,7 @@ const Header = () => {
                   <div className="col-xl-5 col-lg-5 col-md-5 col-5">
                     <div className="header-main-right">
                       <div className="header-btn ml-20 d-none d-xxl-inline-block">
-                        <a className="fill-btn" href="/login">
+                        <a className="fill-btn" href="https://github.com/XamHans/video-2-text">
                           Github
                         </a>
                       </div>
