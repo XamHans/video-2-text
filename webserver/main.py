@@ -32,18 +32,6 @@ async def transcribe(payload: dict = Body(...), req: Request = Request):
     return {"data":  transcript, "error": None}
 
 
-def start_server(host="127.0.0.1",
-                 port=3000,
-                 num_workers=4,
-                 loop="asyncio",
-                 reload=False):
-    uvicorn.run("web_server:app",
-                host=host,
-                port=port,
-                workers=num_workers,
-                loop=loop,
-                reload=reload)
-
-
 if __name__ == "__main__":
-    start_server()
+    uvicorn.run(app, host="0.0.0.0", port=3000)
+
