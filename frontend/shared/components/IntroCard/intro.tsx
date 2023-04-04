@@ -12,7 +12,7 @@ const IntroSection = () => {
         downloading and executing files can be a concern for most users, which\
         is why I want to assure you that this converter is safe and reliable.\
         The code is open source and available for you (button in the header called GitHub), to check and verify\
-        yourself. You can download the converter here: https://filebin.net/9c29bufd20z3sw70/converter.exe",
+        yourself. Just click on the title ⬆️ to download the converter ",
       WorkProcessLink: "https://filebin.net/9c29bufd20z3sw70/converter.exe",
     },
     {
