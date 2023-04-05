@@ -2,7 +2,6 @@ import NextNProgress from "nextjs-progressbar";
 import React from "react";
 import { ErrorBoundary } from "react-error-boundary";
 
-import "bs-stepper/dist/css/bs-stepper.min.css";
 import "../public/assets/css/default.css";
 import "../public/assets/css/fontAwesome5Pro.css";
 import "./index.scss";
