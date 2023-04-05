@@ -3,6 +3,7 @@ import { FormInput } from "@/shared/components/FormInput";
 import IntroSection from "@/shared/components/IntroCard/intro";
 import { useToast } from "@/shared/hooks/useToast";
 import { zodResolver } from "@hookform/resolvers/zod";
+import Link from "next/link";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -92,13 +93,12 @@ export default function Home() {
                           >
                             <option value="english">English</option>
                             <option value="spanish">Spanish</option>
-                           <option value="french">French</option>
-                           <option value="german">German</option>
-                           <option value="arabic">Arabic</option>
-                           <option value="chinese">Chinese</option>
-                           <option value="japanese">Japanese</option>
-                           <option value="russian">Russian</option>
-
+                            <option value="french">French</option>
+                            <option value="german">German</option>
+                            <option value="arabic">Arabic</option>
+                            <option value="chinese">Chinese</option>
+                            <option value="japanese">Japanese</option>
+                            <option value="russian">Russian</option>
                           </select>
                         </div>
                       </div>
@@ -118,6 +118,14 @@ export default function Home() {
                   </>
                 )}
               </form>
+              <small className="mt-5">
+                You need{" "}
+                <Link href="https://phoenixnap.com/kb/ffmpeg-windows">
+                  {" "}
+                  ffmpeg{" "}
+                </Link>{" "}
+                installed.{" "}
+              </small>
             </div>
 
             <div className="row">
