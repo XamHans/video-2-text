@@ -13,7 +13,8 @@ const IntroSection = () => {
         is why I want to assure you that this converter is safe and reliable.\
         The code is open source and available for you (button in the header called GitHub), to check and verify\
         yourself. Just click on the title ⬆️ to download the converter ",
-      WorkProcessLink: "https://filebin.net/9c29bufd20z3sw70/converter.exe",
+      WorkProcessLink:
+        "https://drive.google.com/u/0/uc?id=1dkTasdy9annAQ7MjzR3ehXPEuby2Nzas&export=download",
     },
     {
       WorkProcessStep: "Step 2",
