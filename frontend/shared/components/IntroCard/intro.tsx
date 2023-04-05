@@ -21,7 +21,7 @@ const IntroSection = () => {
       WorkProcessImage: "/assets/img/step-2.svg",
       WorkProcessTitle: "Start the converter",
       WorkProcessDesc:
-        "Double click on the downloaded file. This will start the converter. The converter is now ready and is waiting for you to   the link to the Youtube video. ",
+        "Double click on the downloaded file. This will start the converter.",
       WorkProcessLink: "/",
     },
     {
@@ -29,7 +29,7 @@ const IntroSection = () => {
       WorkProcessImage: "/assets/img/step-3.svg",
       WorkProcessTitle: "Fill in the below form",
       WorkProcessDesc:
-        "Fill in the below form with a link to the Youtube video and select the language of this video. The converter will transcript the video and will show the result beneth the form.",
+        "Fill in the below form with a link to the Youtube video and select the language of this video. The converter will transcript the video. Once the process is done, it will you the result beneth the form.",
       WorkProcessLink: "/",
     },
   ];
