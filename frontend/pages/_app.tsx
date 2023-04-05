@@ -12,6 +12,7 @@ import Header from "@/shared/components/layout/Header/Header";
 import { ThemeProvider } from "next-themes";
 import { AppProps } from "next/app";
 import { Toaster } from "react-hot-toast";
+import { clarity } from "react-microsoft-clarity";
 import ErrorPageMain from "../shared/components/ErrorPage/ErrorPageMain";
 
 if (typeof window !== "undefined") {
@@ -24,6 +25,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   React.useEffect(() => {
     const wow = new WOW();
     wow.init();
+    clarity.init("gjssm51hc0");
   }, []);
 
   return (
