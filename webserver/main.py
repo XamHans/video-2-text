@@ -7,10 +7,7 @@ from businessLogic import transcribeVideoOrchestrator
 app = FastAPI()
 
 origins = [
-    "https://video2text.de",
-    "http://localhost:3000",
-    "https://video-2-text.vercel.app",
-    "https://www.video2text.de/",
+    "*"
 ]
 
 app.add_middleware(

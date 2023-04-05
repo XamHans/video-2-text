@@ -1,5 +1,6 @@
 import whisper
 from pytube import YouTube
+import tempfile
 
 
 def transcribeVideoOrchestrator(youtube_url: str, language: str):
@@ -18,10 +19,9 @@ def transcribe(video: dict):
 def downloadYoutubeVideo(youtube_url: str) -> dict:
     print("Processing : " + youtube_url)
     yt = YouTube(youtube_url)
-    jobPath = './{youtube_url}/'.format(youtube_url=youtube_url)
-
+    directory = tempfile.gettempdir()
     file_path = yt.streams.filter(progressive=True, file_extension='mp4').order_by(
-        'resolution').desc().first().download(output_path=jobPath)
+        'resolution').desc().first().download(directory)
     print("VIDEO NAME " + yt._title)
     print("Download complete:" + file_path)
     return {"name": yt._title, "thumbnail": yt.thumbnail_url, "path": file_path}
