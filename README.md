@@ -1,7 +1,7 @@
 ![banner img](https://i.ibb.co/4tzG9LY/Video2-Text-Banner.png)
 
 
-# Video2Text -- Simply convert video to text
+# Video2Text 
 
 Video2Text (https://video2text.de) allows you to easily convert your video to text. This process is also called transcription.
 Currently it only supports Youtube Videos.
