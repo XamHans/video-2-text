@@ -1,6 +1,8 @@
+import tempfile
+from pprint import pprint
+
 import whisper
 from pytube import YouTube
-import tempfile
 
 
 def transcribeVideoOrchestrator(youtube_url: str, language: str):
@@ -11,8 +13,9 @@ def transcribeVideoOrchestrator(youtube_url: str, language: str):
 
 def transcribe(video: dict):
     print("Transcribing...", video['name'])
-    model = whisper.load_model("base")
+    model = whisper.load_model("medium")
     result = model.transcribe(video['path'])
+    pprint(result)
     return result["text"]
 
 
