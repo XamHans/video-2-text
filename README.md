@@ -1,5 +1,6 @@
 ![banner img](https://i.ibb.co/4tzG9LY/Video2-Text-Banner.png)
 
+!IMPORTANT: THERE IS CURRENTLY [A PROBLEM WITH PYTUBE](https://stackoverflow.com/questions/76129007/pytube-keyerror-streamdata-while-downloading-a-video)
 
 # Video2Text 
 
@@ -7,10 +8,6 @@ Video2Text (https://video2text.de) allows you to easily convert your video to te
 Currently it only supports Youtube Videos.
 
 
-### Converting video to text (non-technical users)
-
-Download and execute the converter(https://filebin.net/9c29bufd20z3sw70/converter.exe).
-Visit https://video2text.de and follow the instructions there.
 
 ### Converting video to text (technical users)
 
