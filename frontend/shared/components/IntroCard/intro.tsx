@@ -7,21 +7,16 @@ const IntroSection = () => {
       WorkProcessImage: "/assets/img/step-1.svg",
       WorkProcessTitle: "Download the converter",
       WorkProcessDesc:
-        "To use the transcript service, you will need to download and \
-        execute a file that contains the converter. I understand that\
-        downloading and executing files can be a concern for most users, which\
-        is why I want to assure you that this converter is safe and reliable.\
-        The code is open source and available for you (button in the header called GitHub), to check and verify\
-        yourself. Just click on the title ⬆️ to download the converter ",
+        "To use the transcript service, you will need to run the python backend. Follow the instructions at the Github page. Just click the GitHub button located on the header (right side).
       WorkProcessLink:
-        "https://drive.google.com/u/0/uc?id=1dkTasdy9annAQ7MjzR3ehXPEuby2Nzas&export=download",
+        "",
     },
     {
       WorkProcessStep: "Step 2",
       WorkProcessImage: "/assets/img/step-2.svg",
-      WorkProcessTitle: "Start the converter",
+      WorkProcessTitle: "Start the backend",
       WorkProcessDesc:
-        "Double click on the downloaded file. This will start the converter.",
+        "Start the python backend: python3 -m uvicorn main:app --reload",
       WorkProcessLink: "/",
     },
     {
@@ -29,7 +24,7 @@ const IntroSection = () => {
       WorkProcessImage: "/assets/img/step-3.svg",
       WorkProcessTitle: "Fill in the below form",
       WorkProcessDesc:
-        "Fill in the below form with a link to the Youtube video and select the language of this video. The converter will transcript the video. Once the process is done, it will you the result beneth the form.",
+        "Fill in the below form with a link to the Youtube video and select the language of this video. The backend will transcript the video. Once the process is done, it will you the result beneth the form.",
       WorkProcessLink: "/",
     },
   ];
