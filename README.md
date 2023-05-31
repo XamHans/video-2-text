@@ -25,7 +25,7 @@ Currently it only supports Youtube Videos.
 If you need any help, contact me at contact@jhayer.tech
 
 ## Author
-Johannes Mueller 
+Johannes Hayer 
 https://jhayer.tech
 
 ## Version History
