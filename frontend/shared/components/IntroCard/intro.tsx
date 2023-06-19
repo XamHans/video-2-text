@@ -16,7 +16,7 @@ const IntroSection = () => {
       WorkProcessImage: "/assets/img/step-2.svg",
       WorkProcessTitle: "Start the backend",
       WorkProcessDesc:
-        "Start the python backend: python3 -m uvicorn main:app --reload",
+        "Install the dependencies and start the python backend: python3 -m uvicorn main:app --reload",
       WorkProcessLink: "/",
     },
     {
