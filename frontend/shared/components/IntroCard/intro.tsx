@@ -7,9 +7,8 @@ const IntroSection = () => {
       WorkProcessImage: "/assets/img/step-1.svg",
       WorkProcessTitle: "Download the converter",
       WorkProcessDesc:
-        "To use the transcript service, you will need to run the python backend. Follow the instructions at the Github page. Just click the GitHub button located on the header (right side).
-      WorkProcessLink:
-        "",
+        "To use the transcript service, you will need to run the python backend. Follow the instructions at the Github page. Just click the GitHub button located on the header (right side).",
+      WorkProcessLink: "/",
     },
     {
       WorkProcessStep: "Step 2",
