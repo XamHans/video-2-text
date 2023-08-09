@@ -21,7 +21,7 @@ def transcribe(video: dict):
 
 def downloadYoutubeVideo(youtube_url: str) -> dict:
     print("Processing : " + youtube_url)
-    yt = YouTube(youtube_url, use_oauth=True, allow_oauth_cache=True)
+    yt = YouTube(youtube_url)
     directory = tempfile.gettempdir()
     file_path = yt.streams.filter(progressive=True, file_extension='mp4').order_by(
         'resolution').desc().first().download(directory)

@@ -5,25 +5,24 @@ const IntroSection = () => {
     {
       WorkProcessStep: "Step 1",
       WorkProcessImage: "/assets/img/step-1.svg",
-      WorkProcessTitle: "Download the converter",
+      WorkProcessTitle: "Copy the project",
       WorkProcessDesc:
-        "To use the transcript service, you will need to run the python backend. Follow the instructions at the Github page. Just click the GitHub button located on the header (right side).",
+        "To use the transcript service, you will need to run clone the repo. Follow the instructions at the Github page. Just click the GitHub button located on the header (right side).",
       WorkProcessLink: "/",
     },
     {
       WorkProcessStep: "Step 2",
       WorkProcessImage: "/assets/img/step-2.svg",
-      WorkProcessTitle: "Start the backend",
+      WorkProcessTitle: "Install",
       WorkProcessDesc:
-        "Install the dependencies and start the python backend: python3 -m uvicorn main:app --reload",
+        "Install the dependencies with pip3 install -r requirements.txt",
       WorkProcessLink: "/",
     },
     {
       WorkProcessStep: "Step 3",
       WorkProcessImage: "/assets/img/step-3.svg",
-      WorkProcessTitle: "Fill in the below form",
-      WorkProcessDesc:
-        "Fill in the below form with a link to the Youtube video and select the language of this video. The backend will transcript the video. Once the process is done, it will you the result beneth the form.",
+      WorkProcessTitle: "Start the frontend",
+      WorkProcessDesc: "Start the frontend with: streamlit run app.py   ",
       WorkProcessLink: "/",
     },
   ];

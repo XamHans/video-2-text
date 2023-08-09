@@ -2,41 +2,39 @@
 
 !IMPORTANT: THERE IS CURRENTLY [A PROBLEM WITH PYTUBE](https://stackoverflow.com/questions/76129007/pytube-keyerror-streamdata-while-downloading-a-video)
 
-# Video2Text 
+# Video2Text
 
 Video2Text (https://video2text.de) allows you to easily convert your video to text. This process is also called transcription.
 Currently it only supports Youtube Videos.
 
+#### How to start
 
-
-### Converting video to text (technical users)
-
-#### Backend (Python - FastAPI & OpenAI Whisper)
-1) cd into webserver
-2) pip3 install -r requirements.txt
-3) start websever with python3 -m uvicorn main:app --reload
-
-#### Frontend (Nextjs)
-1) cd into frontend
-2) yarn install
-3) yarn dev
+0. clone the repo with `git clone https://github.com/XamHans/video-2-text.git`
+1. cd into webserver
+2. pip3 install -r requirements.txt
+3. streamlit run app.py
+4. open http://localhost:8501 in your browser
 
 ## Help
+
 If you need any help, contact me at contact@jhayer.tech
 
 ## Author
-Johannes Hayer 
+
+Johannes Hayer
 https://jhayer.tech
 
 ## Version History
 
-* 0.1
-    * Initial Release
+- 0.2
+  used streamlit for frontend
+- 0.1
+  - Initial Release
 
 ## License
 
-This project is licensed under the  MIT license
+This project is licensed under the MIT license
 
 ## Acknowledgments
 
-OpenAI Whisper* [here](https://github.com/openai/whisper)
+OpenAI Whisper\* [here](https://github.com/openai/whisper)
