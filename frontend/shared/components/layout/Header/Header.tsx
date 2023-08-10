@@ -1,4 +1,3 @@
-import useSticky from "@/shared/hooks/useSticky";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -6,7 +5,6 @@ import { useEffect, useState } from "react";
 
 const Header = () => {
   // sticky nav
-  const { sticky } = useSticky();
   const { setTheme } = useTheme();
 
   const router = useRouter();
@@ -18,14 +16,7 @@ const Header = () => {
   return (
     <>
       <header className={`header1 `}>
-        <div
-          id="header-sticky"
-          className={
-            sticky
-              ? "sticky header-main header-main1"
-              : "header-main header-main1"
-          }
-        >
+        <div id="header-sticky" className={"sticky header-main header-main1"}>
           <div className="container header-container">
             <div className="row align-items-center">
               <div className="col-xl-2 col-lg-2 col-md-4 col-4">
@@ -48,7 +39,10 @@ const Header = () => {
                   <div className="col-xl-5 col-lg-5 col-md-5 col-5">
                     <div className="header-main-right">
                       <div className="header-btn ml-20 d-none d-xxl-inline-block">
-                        <a className="fill-btn" href="https://github.com/XamHans/video-2-text">
+                        <a
+                          className="fill-btn"
+                          href="https://github.com/XamHans/video-2-text"
+                        >
                           Github
                         </a>
                       </div>
