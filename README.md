@@ -1,19 +1,25 @@
 ![banner img](https://i.ibb.co/4tzG9LY/Video2-Text-Banner.png)
 
-!IMPORTANT: THERE IS CURRENTLY [A PROBLEM WITH PYTUBE](https://stackoverflow.com/questions/76129007/pytube-keyerror-streamdata-while-downloading-a-video)
 
 # Video2Text
 
-Video2Text (https://video2text.de) allows you to easily convert your video to text. This process is also called transcription.
-Currently it only supports Youtube Videos.
+Video2Text (https://video2text.de) allows you to easily convert a youtube video to text. This process is also called transcription.
+It is completely free to use and runs locally on your pc.
 
-#### How to start
+
+## Video Tutorial
+
+[![](https://markdown-videos-api.jorgenkh.no/youtube/b9oyBebJCK0)](https://youtu.be/b9oyBebJCK0)
+
+
+## Written Tutorial
 
 0. clone the repo with `git clone https://github.com/XamHans/video-2-text.git`
 1. cd into webserver
 2. pip3 install -r requirements.txt
-3. streamlit run app.py
-4. open http://localhost:8501 in your browser
+2.1 if you should run into an error where streamlit is not recognized by your terminal, try this command in your terminal: export PATH="$HOME/.local/bin:$PATH"
+4. streamlit run app.py
+5. open http://localhost:8501 in your browser
 
 ## Help
 
