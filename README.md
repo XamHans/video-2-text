@@ -24,11 +24,11 @@ It is completely free to use and runs locally on your pc.
 ## Help
 
 If you should have any troubles try to re-install pytube.
-
+```
 pip uninstall pytube
 pip uninstall pytube3
 pip install pytube
-
+```
 If you still have problems, create a new issue.
 
 ## Author
