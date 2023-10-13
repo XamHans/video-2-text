@@ -16,6 +16,11 @@ It is completely free to use and runs locally on your pc.
 
 [PLEASE MAKE SURE YOU HAVE FFMPEG INSTALLED!](https://www.wikihow.com/Install-FFmpeg-on-Windows)
 
+$ apt-get install ffmpeg
+or
+$ brew install ffmpeg
+
+
 0. clone the repo with `git clone https://github.com/XamHans/video-2-text.git`
 1. cd into webserver
 2. pip3 install -r requirements.txt
