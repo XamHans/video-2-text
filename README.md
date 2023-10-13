@@ -25,9 +25,8 @@ or
 0. clone the repo with `git clone https://github.com/XamHans/video-2-text.git`
 1. cd into webserver
 2. pip3 install -r requirements.txt
-2.1 if you should run into an error where streamlit is not recognized by your terminal, try this command in your terminal: export PATH="$HOME/.local/bin:$PATH"
-4. streamlit run app.py
-5. open http://localhost:8501 in your browser
+3. streamlit run app.py
+4. open http://localhost:8501 in your browser
 
 ## Help
 
@@ -37,6 +36,8 @@ pip uninstall pytube
 pip uninstall pytube3
 pip install pytube
 ```
+if you should run into an error where streamlit is not recognized by your terminal, try this command in your terminal: export PATH="$HOME/.local/bin:$PATH"
+
 If you still have problems, create a new issue.
 
 ## Author
