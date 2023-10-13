@@ -40,6 +40,11 @@ if you should run into an error where streamlit is not recognized by your termin
 
 If you still have problems, create a new issue.
 
+
+## Support
+If you want to support me, you can buy me a coffee: https://www.buymeacoffee.com/hayerhans
+Your support means a lot to me, thanks!
+
 ## Author
 
 Johannes Hayer
