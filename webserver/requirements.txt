@@ -1,3 +1,6 @@
 pytube
 openai-whisper
 streamlit
+supabase
+fastapi
+uvicorn
