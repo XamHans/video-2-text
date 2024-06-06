@@ -1,5 +1,6 @@
 import streamlit as st
 from businessLogic import transcribeVideoOrchestrator
+from streamlit.components.v1 import html
 
 
 def open_buy_me_coffee():
@@ -24,7 +25,7 @@ def main():
             data-y_margin="18">
         </script>
     """
-    st.components.v1.html(buy_me_coffee_script)
+    html(buy_me_coffee_script)
     st.title("Support Me on Buy Me a Coffee")
     st.write(
         "If you find this app helpful and would like to support me, you can buy me a coffee!")
