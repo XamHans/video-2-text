@@ -4,6 +4,9 @@ from pprint import pprint
 import whisper
 from pytube import YouTube
 
+import ssl
+ssl._create_default_https_context = ssl._create_stdlib_context
+
 
 def transcribeVideoOrchestrator(youtube_url: str,  model_name: str):
     video = downloadYoutubeVideo(youtube_url)
