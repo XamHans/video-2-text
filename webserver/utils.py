@@ -1,5 +1,5 @@
 import re
-from supabaseClient import getTranscription
+from supabase import getTranscription
 
 
 def is_youtube_url(url):
